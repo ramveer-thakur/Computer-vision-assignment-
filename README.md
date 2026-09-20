@@ -1,7 +1,7 @@
 # Computer-vision-assignment-
 
 Q1. Read an image using OpenCV and display it.
-# ============================================================
+# 
 def q1():
     image = load_color_image()
     if image is None:
@@ -12,9 +12,9 @@ def q1():
     cv2.destroyAllWindows()
 
 
-# ============================================================
+# =
 # Q2. Check whether an image was loaded successfully.
-# ============================================================
+# ==
 def q2():
     image = cv2.imread(IMAGE_PATH)
 
@@ -24,9 +24,9 @@ def q2():
         print("Image loaded successfully.")
 
 
-# ============================================================
+# ===
 # Q3. Print image height, width, and number of channels.
-# ============================================================
+# =
 def q3():
     image = load_color_image()
     if image is None:
@@ -38,9 +38,9 @@ def q3():
     print("Number of channels:", channels)
 
 
-# ============================================================
+# ==
 # Q4. Calculate and print total number of pixels.
-# ============================================================
+# ===
 def q4():
     image = load_color_image()
     if image is None:
@@ -52,9 +52,9 @@ def q4():
     print("Total number of pixels:", total_pixels)
 
 
-# ============================================================
+# =
 # Q5. Print the image data type.
-# ============================================================
+# ==
 def q5():
     image = load_color_image()
     if image is None:
@@ -63,9 +63,9 @@ def q5():
     print("Image data type:", image.dtype)
 
 
-# ============================================================
+# ===
 # Q6. Read an image and save it with a different filename.
-# ============================================================
+# ====
 def q6():
     image = load_color_image()
     if image is None:
@@ -77,9 +77,9 @@ def q6():
     print("Image saved as:", output_name)
 
 
-# ============================================================
+# ===
 # Q7. Read an image directly in grayscale and display it.
-# ============================================================
+# ===
 def q7():
     gray = cv2.imread(IMAGE_PATH, cv2.IMREAD_GRAYSCALE)
 
@@ -92,9 +92,9 @@ def q7():
     cv2.destroyAllWindows()
 
 
-# ============================================================
+# ===
 # Q8. Convert a color image to grayscale using cv2.cvtColor().
-# ============================================================
+# ==
 def q8():
     image = load_color_image()
     if image is None:
@@ -107,9 +107,9 @@ def q8():
     cv2.destroyAllWindows()
 
 
-# ============================================================
+# ===
 # Q9. Display an image using Matplotlib and hide the axis.
-# ============================================================
+# ====
 def q9():
     image = load_color_image()
     if image is None:
@@ -123,9 +123,9 @@ def q9():
     plt.show()
 
 
-# ============================================================
+# ==
 # Q10. Resize an image to 50% width and height.
-# ============================================================
+# ===
 def q10():
     image = load_color_image()
     if image is None:
@@ -143,9 +143,9 @@ def q10():
     cv2.destroyAllWindows()
 
 
-# ============================================================
+# ====
 # Q11. Access and print the pixel at user-provided (x, y).
-# ============================================================
+# =====
 def q11():
     image = load_color_image()
     if image is None:
@@ -166,9 +166,9 @@ def q11():
         print("Error: Please enter integer coordinates.")
 
 
-# ============================================================
+# ===
 # Q12. Modify a selected pixel intensity/value and save it.
-# ============================================================
+# ===
 def q12():
     image = load_color_image()
     if image is None:
@@ -194,9 +194,9 @@ def q12():
         print("Error: Please enter integer coordinates.")
 
 
-# ============================================================
+# ==
 # Q13. Print B, G, R values at a selected pixel.
-# ============================================================
+# ===
 def q13():
     image = load_color_image()
     if image is None:
@@ -220,9 +220,9 @@ def q13():
         print("Error: Please enter integer coordinates.")
 
 
-# ============================================================
+# ===
 # Q14. Split a color image into B, G, R channels and display them.
-# ============================================================
+# ==
 def q14():
     image = load_color_image()
     if image is None:
@@ -238,9 +238,9 @@ def q14():
     cv2.destroyAllWindows()
 
 
-# ============================================================
+# ====
 # Q15. Merge three separate channels into one color image.
-# ============================================================
+# =====
 def q15():
     image = load_color_image()
     if image is None:
@@ -254,9 +254,9 @@ def q15():
     cv2.destroyAllWindows()
 
 
-# ============================================================
+# ===
 # Q16. Calculate and print minimum and maximum grayscale intensity.
-# ============================================================
+# =====
 def q16():
     image = load_color_image()
     if image is None:
@@ -268,9 +268,9 @@ def q16():
     print("Maximum intensity:", np.max(gray))
 
 
-# ============================================================
+
 # Q17. Calculate and print mean grayscale intensity.
-# ============================================================
+# =======
 def q17():
     image = load_color_image()
     if image is None:
@@ -281,9 +281,9 @@ def q17():
     print("Mean intensity:", np.mean(gray))
 
 
-# ============================================================
+# ===
 # Q18. Calculate mean and standard deviation of grayscale image.
-# ============================================================
+# ====
 def q18():
     image = load_color_image()
     if image is None:
@@ -298,9 +298,9 @@ def q18():
     print("Standard deviation:", std_value)
 
 
-# ============================================================
+# ====
 # Q19. Create a 256x256 grayscale image with intensity 128.
-# ============================================================
+# ======
 def q19():
     image = np.full((256, 256), 128, dtype=np.uint8)
 
@@ -312,9 +312,9 @@ def q19():
     print("Created 256x256 grayscale image with intensity 128.")
 
 
-# ============================================================
+# ===
 # Q20. Create and display a grayscale intensity ramp from 0 to 255.
-# ============================================================
+# ==
 def q20():
     row = np.arange(256, dtype=np.uint8)
     ramp = np.tile(row, (256, 1))
@@ -327,9 +327,9 @@ def q20():
     print("Created grayscale intensity ramp from 0 to 255.")
 
 
-# ============================================================
+# ===
 # Q21. Convert 8-bit grayscale image to 4-bit quantized image.
-# ============================================================
+# =====
 def q21():
     image = load_color_image()
     if image is None:
@@ -352,9 +352,9 @@ def q21():
     print("Quantized intensity levels: 0 to 15")
 
 
-# ============================================================
+# ====
 # Q22. Convert 8-bit grayscale image to 2-bit quantized image.
-# ============================================================
+# =====
 def q22():
     image = load_color_image()
     if image is None:
@@ -377,9 +377,9 @@ def q22():
     print("Quantized intensity levels: 0 to 3")
 
 
-# ============================================================
+# ====
 # Q23. Downsample an image by factor 2 in width and height.
-# ============================================================
+# ====
 def q23():
     image = load_color_image()
     if image is None:
@@ -400,9 +400,9 @@ def q23():
     cv2.destroyAllWindows()
 
 
-# ============================================================
+# ====
 # Q24. Crop a rectangular ROI using user-provided coordinates.
-# ============================================================
+# =======
 def q24():
     image = load_color_image()
     if image is None:
@@ -436,9 +436,9 @@ def q24():
         print("Error: Please enter integer coordinates.")
 
 
-# ============================================================
+# ===
 # Q25. Rotate an image by 90 degrees, display and save it.
-# ============================================================
+# ====
 def q25():
     image = load_color_image()
     if image is None:
